@@ -1,0 +1,189 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary {
+  display: flex;
+  
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.summary div {
+  font-size: 1.2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  width: 45%;
+  padding: 8px;
+  font-size: 1em;
+  margin-top: 20px;
+  
+}
+
+form button {
+  padding: 8px 20px;
+  font-size: 1em;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+.filters {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  margin-right: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  background-color: #f8f8f8;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.delete {
+  background-color: #dc3545;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 600px) {
+  form {
+      flex-direction: column;
+  }
+
+  form input {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  form button {
+      width: 100%;
+  }
+}
+
+.transaction-type {
+  margin: 10px 0;
+}
+
+.transaction-type label {
+  margin-right: 15px;
+}
+
+
+
+/* Responsive Design for Small Devices */
+@media (max-width: 600px) {
+  .summary {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  form {
+      flex-direction: column;
+  }
+
+  form input {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  form button {
+      width: 100%;
+  }
+
+  .transaction-type {
+      flex-direction: column;
+      justify-content: flex-start;
+  }
+
+  table, th, td {
+      font-size: 0.9em;
+  }
+}
+
+/* Responsive for tablets */
+@media (max-width: 900px) {
+  .summary div {
+      font-size: 1.1em;
+  }
+
+  form input {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  form button {
+      width: 100%;
+  }
+}
